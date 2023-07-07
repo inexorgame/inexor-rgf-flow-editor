@@ -12,3 +12,16 @@ Cargo.lock
 
 # MSVC Windows builds of rustc generate these, which store debugging information
 *.pdb
+
+# Prevent tokens to be commited
+**/*.token
+
+# Exclude CLIon / IntelliJ project files
+.idea
+
+node_modules
+
+src-tauri/log
+src-tauri/plugins
+
+yarn-error.log
