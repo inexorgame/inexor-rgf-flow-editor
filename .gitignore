@@ -25,3 +25,5 @@ src-tauri/log
 src-tauri/plugins
 
 yarn-error.log
+
+vsc-extension-quickstart.md
