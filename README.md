@@ -15,49 +15,18 @@ This repo is experimental.
 
 ## Roadmap
 
-### Milestone 1: Make it work
-
-- [x] Make frontend build with a working vscode-web
-- [x] Tauri delivers a simple, but working VS Code in a tauri window
-
-### Milestone 2: POC: Make it extensible, Try to integrate
-
-- [ ] Implement a simple, but working extension which is included in the frontend
-- [ ] Test different types of extensions like commands, notifications, editors, ...
-
-### Milestone 3: Virtual File System
-
-- [ ] Runtimes
-  - [ ] Types
-    - [ ] Components
-      - [ ] Component
-    - [ ] Entity Types
-      - [ ] Entity Type
-    - [ ] Relation Types
-      - [ ] Relation Type
-    - [ ] Flow Types
-      - [ ] Flow Type
-  - [ ] System
-    - [ ] Plugins
-      - [ ] Plugin
-    - [ ] Remotes
-      - [ ] Remote
-
-### Milestone 4: Integrate with inexor-rgf-runtime
-
-- [ ] Backend: Prepare a directory layout for running one or multiple local runtimes
-- [ ] Backend: Prepare a config file with a list of local and remote runtimes
-- [ ] Backend: RuntimeManager: list, create, read, update, delete, start, stop, restart a runtime
-- [ ] Backend: Provide RPC commands for the RuntimeManager 
-- [ ] Frontend: RuntimeManager: list, create, read, update, delete, start, stop, restart a runtime
-- [ ] VFS Runtimes
-
-### Milestone 5: Plugins
-
-### Milestone 6: Type System: Components
-
-### Milestone 7: Type System: Entity Types
-
-### Milestone 8: Type System: Relation Types
-
-### Milestone 9: Type System: Flow Types
+- [x] Milestone 1: Make VS Code run in tauri ✓
+- [x] Milestone 2: Simple extension, experiment with the possibilities of VS Code extensions
+- [ ] Milestone 3: Virtual File System: Experiment if it is possible to represent the type system (and instance system)
+      as virtual file system
+- [ ] Milestone 4: Manage Plugins
+- [ ] Milestone 5: Manage Remotes
+- [ ] Milestone 6: Type System: Components (CRUD)
+- [ ] Milestone 7: Type System: Entity Types (CRUD)
+- [ ] Milestone 8: Type System: Relation Types (CRUD)
+- [ ] Milestone 9: Type System: Flow Types (CRUD)
+- [ ] Milestone 7: Instance System: Entity Instances (CRUD)
+- [ ] Milestone 8: Instance System: Relation Instances (CRUD)
+- [ ] Milestone 9: Instance System: Flow Instances (CRUD)
+- [ ] Milestone 10: Implement an editor for Flow Types using https://reactflow.dev/
+- [ ] Milestone 11: Implement an editor and debugger for Flow Instances using https://reactflow.dev/
