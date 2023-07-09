@@ -17,7 +17,7 @@
     "bundle": {
       "active": true,
       "category": "DeveloperTool",
-      "copyright": "",
+      "copyright": "2011-2023",
       "deb": {
         "depends": []
       },
@@ -30,7 +30,7 @@
         "icons/icon.ico"
       ],
       "identifier": "org.inexor.rgf.flow.editor",
-      "longDescription": "",
+      "longDescription": "Flow Editor for Inexor Reactive Graph Flow",
       "macOS": {
         "entitlements": null,
         "exceptionDomain": "",
