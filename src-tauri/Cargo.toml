@@ -1,6 +1,6 @@
 [package]
 name = "inexor-rgf-flow-editor"
-version = "0.1.0"
+version = "0.9.1"
 description = "IDE for editing flows"
 authors = ["Andreas Schaeffer <hanack@nooblounge.net>"]
 license = "MIT"

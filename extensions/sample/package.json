@@ -9,7 +9,7 @@
     "activationEvents": ["onFileSystem:memfs", "onDebug"],
     "browser": "./extension",
     "engines": {
-      "vscode": "^1.48.0"
+      "vscode": "^0.9.1"
     },
     "contributes": {
       "viewsWelcome": [
