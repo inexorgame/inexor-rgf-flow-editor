@@ -10,11 +10,11 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@tauri-apps/cli": "^1.2.2",
+    "@tauri-apps/cli": "^1.4.0",
     "express": "^4.17.1"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.2.0",
+    "@tauri-apps/api": "^1.4.0",
     "vscode-web": "1.79.0"
   }
 }
