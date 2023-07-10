@@ -4,7 +4,7 @@
     "beforeDevCommand": "/bin/zsh -c 'source ~/.zshrc; yarn dev'",
     "devPath": "http://localhost:1420",
     "distDir": "../dist",
-    "withGlobalTauri": true
+    "withGlobalTauri": false
   },
   "package": {
     "productName": "inexor-rgf-flow-editor",
