@@ -16,10 +16,21 @@ tauri-build = { version = "1.2.1", features = [] }
 build-data = "0.1"
 
 [dependencies]
+actix-web = { version = "4.0", default-features = false, features = ["macros"] }
+async-graphql = { version = "5.0", features = ["uuid"] }
+async-graphql-actix-web = "5.0"
+dashmap = "5.4"
+log = { version = "0.4", features = ["std", "serde"] }
+log4rs = { version = "1.2", features = ["console_appender", "file_appender", "toml_format", "ansi_writer"] }
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "1.2.4", features = [] }
-# TODO: inexor-rgf-runtime = { version = "0.9.1", git = "xyz" }
+tauri = { version = "1.2.4", features = ["notification-all", "process-exit", "process-relaunch", "shell-open"] }
+tokio = { version = "1", features =  ["macros", "time", "rt", "rt-multi-thread"] }
+
+### Prefer git over crates.io for development
+
+inexor-rgf-rt = { version = "0.9.1", git = "https://github.com/inexorgame/inexor-rgf-application.git" }
+inexor-rgf-model-runtime = { version = "0.9.1", git = "https://github.com/inexorgame/inexor-rgf-application.git" }
 
 [features]
 # by default Tauri runs in production mode
