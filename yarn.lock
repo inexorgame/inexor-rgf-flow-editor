@@ -481,7 +481,7 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-vscode-web@1.79.0:
-  version "1.79.0"
-  resolved "https://registry.yarnpkg.com/vscode-web/-/vscode-web-1.79.0.tgz#a23d42b5f85d8e0918a6ab87914b1a34bd102760"
-  integrity sha512-DeZbvQWQOnWY36bXPd0pzvp/8sEmrOwW3d5c6ikW4OKzmX0KCdydc24XSU9H26QJ/qh0RJg5RSqXd2hHO3gWmQ==
+vscode-web@1.80.0:
+  version "1.80.0"
+  resolved "https://registry.yarnpkg.com/vscode-web/-/vscode-web-1.80.0.tgz#efaab42dc0797a69f8e7aba31380d7ce22e37dde"
+  integrity sha512-J/KYPmpuiDvRvQLmKkZaF7xew+LCflkSspBFvrsDIUsRVtHMYcx2fqJK4+HSmHClm58GuSSwG2iM1m6uzyb0zg==
