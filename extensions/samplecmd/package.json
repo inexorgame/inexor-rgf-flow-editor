@@ -2,11 +2,11 @@
   "name": "samplecmd",
   "displayName": "samplecmd",
   "description": "Sample Command",
-  "version": "0.0.1",
+  "version": "0.9.1",
   "publisher": "Inexor",
   "license": "MIT",
   "private": true,
-  "browser": "./out/extension",
+  "browser": "./dist/extension",
   "engines": {
     "vscode": "^0.9.1"
   },
@@ -14,25 +14,32 @@
     "Other"
   ],
   "activationEvents": [],
-  "main": "./out/extension.js",
+  "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "samplecmd.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "samplecmd.exitProcess",
+        "title": "Exit Flow Editor"
       }
     ]
   },
   "scripts": {
-    "vscode:prepublish": "yarn run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "yarn run compile && yarn run lint",
+    "vscode:prepublish": "yarn run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.79.0",
+    "@types/vscode": "^1.80.0",
     "@types/glob": "^8.1.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "20.2.5",
@@ -42,6 +49,12 @@
     "glob": "^8.1.0",
     "mocha": "^10.2.0",
     "typescript": "^5.1.3",
+    "ts-loader": "^9.4.3",
+    "webpack": "^5.85.0",
+    "webpack-cli": "^5.1.1",
     "@vscode/test-electron": "^2.3.2"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.4.0"
   }
 }
